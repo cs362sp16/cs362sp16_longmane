@@ -1,0 +1,10 @@
+For this assignment I removed five sections of the massive switch statement and put them into functions of their own. This meant copying all of the code from within each case and pasting it into my new_fucntion(). Then I made sure to add the neccesary parameters on both ends. I made all my new functions ints so that they could still return 0, and in the case statement simply returned the return value of the new function. 
+
+The five cases I refactored are: 
+Mine
+Smithy
+Village
+Great Hall
+Outpost
+
+Some bugs were placed in choice areas.
