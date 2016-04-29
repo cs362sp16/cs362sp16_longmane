@@ -1,0 +1,20 @@
+Unit Testing
+Emily Longman
+4/28/16
+
+Unit Test 1:
+
+My first unit test checks the shuffling function and returns errors if a player fails to have their hand shuffled. 
+
+Unit Test 2:
+
+The second test asses the functionality of buyCard, and ensure the user is able to buy them.
+
+Unit Test 3:
+
+Tests the functionality of drawCard, seeing that the whole function works properly.
+
+Unit Test 4:
+
+Tests the endTurn function and ensure it works as a whole also.
+

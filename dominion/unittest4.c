@@ -4,20 +4,20 @@
 int failed = 0;
 
 int myassert(int val,char* msg) {
-  if (val == -1) {
-    printf("FAILURE: %s\n",msg);
-    failed = 1;
-  }
+	if (val == -1) {
+    	printf("FAILURE: %s\n",msg);
+    	failed = 1;
+    }
 }
 
 void good_assert() {
-  if (!failed) {
-    printf ("SUCCESS!\n");
-  }
+	if (!failed) {
+		printf ("SUCCESS!\n");
+    }
 }
 
-//tests the buyCard function
-int main(){
+// tests the endTurn function
+int main() {
 
 	int tester;
 	struct gameState s;
@@ -27,10 +27,10 @@ int main(){
 
     initializeGame(2, k, 5, &s); 
         
-    tester = buyCard(10, &s);
-	myassert(tester == -1, "Could not buy card");
-
+    tester = endTurn(&s);
+	myassert(tester == -1, "turn was not ended properly");
+	
 	good_assert();
-
+	
 	return 0;
 }

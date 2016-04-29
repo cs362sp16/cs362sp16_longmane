@@ -35,15 +35,15 @@ int main() {
 
 	initializeGame(2, cards, 3, &g);
 
-	int shuff = shuffle(0, &g);
-	myassert(shuff == 0, "No P1 shuffle");
-	shuff = shuffle(1, &g);
-	myassert(shuff == 0, "No P1 shuffle");
+	int tester = shuffle(0, &g);
+	myassert(tester == 0, "No P1 shuffle");
+	tester = shuffle(1, &g);
+	myassert(tester == 0, "No P1 shuffle");
 
 	int cards2[1] = {estate};
 	initializeGame(2, cards2, 3, &g2);
-	shuff = shuffle(1, &g2);
-	myassert(shuff == -1, "NO SHUFFLE");
+	tester = shuffle(1, &g2);
+	myassert(tester == -1, "NO SHUFFLE");
 
 	good_assert();
 
