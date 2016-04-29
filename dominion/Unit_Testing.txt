@@ -18,3 +18,7 @@ Unit Test 4:
 
 Tests the endTurn function and ensure it works as a whole also.
 
+As a whole my tests tended to be successful becuase I had trouble coming up with
+ways to get them to fail that would still be easily testible. I've learned a lot
+from this assignment.
+
