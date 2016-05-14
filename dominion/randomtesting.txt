@@ -1,0 +1,13 @@
+Emily Longman
+5/13/16
+Random testing writeup
+
+For this assignment I based my tests format off of my previous card tests.
+I then added randomization of the number of players, deck, and hand. 
+This worked reasonably well getting me to around 30% coverage. 
+I wrote a bash script to do the command line entries for me, which made it go a lot faster. 
+A lot of the code that failed to get covered was in the other functions that my card functions called.
+I got smithy to 100% coverage when I ran it 5000 times, giving it enough randomization to hit everything.
+The random tests were only a little better than my previous unit tests. 
+I think the unit tests acutally had better fault detection than the random tests becuase I could include more edge case situations in them rather than just letting the randoms do the work.
+I liked how easy the random tests were, putting the CPU to work rather than having to try to write asserts that hit everything possible.
