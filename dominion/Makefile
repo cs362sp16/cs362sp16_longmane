@@ -14,6 +14,9 @@ interface.o: interface.h interface.c
 
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
+
+testdom: interface.o dominion.c testdominion.c 
+	gcc -o testdom testdominion.c -g dominion.o interface.o rngs.o $(CFLAGS)
 	
 unittestresults.out: dominion.o rngs.o
 	gcc -o unittest1 unittest1.c dominion.c rngs.o $(CFLAGS)
@@ -47,7 +50,7 @@ debug: dominion.o rngs.o interface.o
 man: dominion.o rngs.o interface.o
 	gcc -o randomtestcard1 randomtestcard1.c dominion.o rngs.o interface.o $(CFLAGS)
 	
-all: playdom player
+all: playdom player testdom
 
 clean:
 	rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 randomtestcard1 randomtestcard2 randomtestadventurer player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM

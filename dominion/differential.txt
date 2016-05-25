@@ -1,0 +1,9 @@
+Emily Longman
+5/24/16
+CS 362 
+Assignment 4
+
+This was an interresting assignment and while I like the idea of differential testing, it was hard to tell who was "right" and who wasn't. 
+Perhaps it could have been implemented better to help with that, but not with out serious effort.
+This was also a less than ideal situation because the way dominion.c outputs results is ugly.
+I was just barely able to reach 60% coverage on both dominons, with 62% on mine and 61% on the other.

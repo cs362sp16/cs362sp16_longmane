@@ -1168,10 +1168,10 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 }
 
 // refactored functions
-int new_mine(struct gameState *state, int currentPlayer,int handPos, int choice2)
+int new_mine(struct gameState *state, int currentPlayer,int handPos, int choice1, int choice2)
 {
-
-      j = state->hand[currentPlayer][choice1];  //store card we will trash
+      int i = 0;
+      int j = state->hand[currentPlayer][choice1];  //store card we will trash
 
       if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold)
 	{
@@ -1206,8 +1206,10 @@ int new_mine(struct gameState *state, int currentPlayer,int handPos, int choice2
       return 0;
 }
 
-int new_smithy(struct gameState *state, currentPlayer, int handPos)
+int new_smithy(struct gameState *state, int currentPlayer, int handPos)
 {
+    int i = 0;
+
     //+3 Cards
     for (i = 0; i < 3; i++)
 	{
@@ -1219,7 +1221,7 @@ int new_smithy(struct gameState *state, currentPlayer, int handPos)
     return 0;
 }
 
-int new_village(struct gameState *state, currentPlayer, int handPos)
+int new_village(struct gameState *state, int currentPlayer, int handPos)
 {
       //+1 Card
       drawCard(currentPlayer, state);
@@ -1232,7 +1234,7 @@ int new_village(struct gameState *state, currentPlayer, int handPos)
       return 0;
 }
 
-int new_great_hall(struct gameState *state, currentPlayer, int handPos)
+int new_great_hall(struct gameState *state, int currentPlayer, int handPos)
 {
       //+1 Card
       drawCard(currentPlayer, state);
@@ -1245,7 +1247,7 @@ int new_great_hall(struct gameState *state, currentPlayer, int handPos)
       return 0;
 }
 
-int new_outpost(struct gameState *state, currentPlayer, int handPos)
+int new_outpost(struct gameState *state, int currentPlayer, int handPos)
 {
       //set outpost flag
       state->outpostPlayed++;
