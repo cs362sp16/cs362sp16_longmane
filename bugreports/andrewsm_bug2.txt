@@ -1,0 +1,13 @@
+Bug Report 2 for andrewsm
+
+vc_bug1
+
+The village card if found to fail to properly increment numActions when running a unit test.
+
+The statement responsible for this is {state->numActions = state->numActions - 2;}
+
+Severity - Moderate
+This is moderately severe because it will happen every time this card is called and will have reprocussions for the "player".
+
+Priority - Moderate
+The priority for this is moderate because it is not catastrophic, and can be changed with literally one character, but it will always happen when this card is used.

@@ -1,0 +1,13 @@
+Bug Report 3 for ellibran
+
+gh_bug1
+
+The Great Hall card fails to call discardCard() when running a unit test.
+
+discardCard() is not called because it is commented out, even though it is an integeral function of the card. This is the statement that should be called {//discardCard(handPos, currentPlayer, state, 0);}
+
+Severity - Low
+The severity of this bug is low because it doesn't break any functionaly of the game, it simply gives the player using that card and extra card in their hand.
+
+Priority - Low
+The priority of this bug is also low because the card won't always be played, and it is easily fixable.

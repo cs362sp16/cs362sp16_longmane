@@ -1,0 +1,15 @@
+Bug Report 1 for danm
+
+pc_bug1
+
+the playCard() function fails when running the unit test on it and returns -1.
+
+There is a boolean statement which will end up as true even when it shouldn't, that seems to be causing the problem.
+The statement is: {(card < adventurer || card > treasure_map)} 
+
+Severity - Moderate
+While this can have an impact on the greater functionality of the game, not every situation will trigger this bug.
+The game is still playable with it in place, it just causes small errors in the occasional round.
+
+Priority - Low
+Since this bug isn't catastrophic, isn't always triggered, is easily fixable, its priority is pretty low.
