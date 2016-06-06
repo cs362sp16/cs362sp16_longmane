@@ -1,0 +1,26 @@
+Emily Longman
+6/6/16
+CS362
+
+Mutation Testing
+
+I used the cmutate tool to create and test mutants for dominion.c. 
+I created nearly 3000 of them and compared their coverage to that of my random tester. 
+They both use the concept of random generation to test as much of the code as possible, but with different mechanisms. 
+
+
+There were some ups and downs to this mutation testing.
+While it did cover quite a lot of code and introduced a good deal of mutants, it seemed to be less effective than my random tester.
+The cmutate tool warned that roughly 15% of the mutants would be the same as the original and 10% would have mutations that couldn't compile. 
+This was a spot on prediction, meaning only about 2250 of my mutants were viable. 
+Since I never meant to produce that many in the first place though, I had plenty. 
+Having this huge swath of coverage is nice, but it was clumsy to really test with.
+I ended up with less coverage than the 62% I was able to achieve with the random tester. 
+
+
+It seems like the main bonus of mutation testing like this is actually to test your tester, rather than the program itself. 
+This is very useful to have, since it give you an idea of what portions of your test suite could use improvement. 
+In the end I think this is its best usage; acting as a companion to a prexisting test suite rather than testing the code iteslf. 
+
+
+The mutant line changes can be seen in dominion_MutantDescs.txt, which is much easier than uploading all the mutants. 
