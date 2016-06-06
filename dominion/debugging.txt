@@ -1,0 +1,13 @@
+Emily Longman
+6/6/16
+CS362
+
+Debugging
+
+To identify and fix a bug in my code I started with a bug report from Brandon Ellis, found here: https://github.com/cs362sp16/cs362sp16_ellibran/blob/master/bugreports/longmane_bug2.txt
+
+This bug report was pretty thorough and told me exactly what was wrong and where to find it, but I wanted to understand why that bug was breaking it.
+To do this I used good old GDB on my cardtest of new_mine. 
+Using GDBs features I was able to see clearly that discardCard was never being called. 
+In using this process to debug I applied several of Agan's rules, namely 1, 2, and 7. 
+I need to understand dominion to be able to do this, my cardtest was what made it fail, and I decided to use GDB to test that my cardtest was correct.
